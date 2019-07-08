@@ -10,7 +10,8 @@
   "dependencies": {
     "@react-native-community/cameraroll": "^1.1.1",
     "react": "16.8.6",
-    "react-native": "0.60.0"
+    "react-native": "0.60.0",
+    "react-native-easy-grid": "^0.2.1"
   },
   "devDependencies": {
     "@babel/core": "^7.5.0",
