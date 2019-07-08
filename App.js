@@ -1,7 +1,8 @@
 import React from 'react';
-import {Text, Button, View, Image, ScrollView} from 'react-native';
+import {Text, Button, View, Image, ScrollView , TouchableOpacity} from 'react-native';
 import CameraRoll from '@react-native-community/cameraroll';
 import {Col, Row, Grid} from 'react-native-easy-grid';
+
 
 class App extends React.Component {
 
@@ -34,27 +35,60 @@ class App extends React.Component {
         return (
 
             <Grid>
-                <Row size={60} style={{backgroundColor: 'red'}}>
-                    <Image
-                        style={{  flex: 1,
 
-                            alignSelf: 'center',
-                            width: '100%',
-                            height: '100%'}}
-                        source={{uri: 'https://www.mini.in/en_IN/home/jcr:content/main/home_teaser_gallery/home-teaser-gallery-par/home_teaser_item_cop_783170173/image-item/damImage.wide.560w.j_1561456852353.jpg'}}
-                    />
+                <Row size={5} style={{backgroundColor: 'white'}}>
+                    <Col style = {{margin:20}} size={15} >
+                        <TouchableOpacity onPress={this._onPressButton}>
+                            <Text style={{color:"black" , fontWeight: 'bold'}}>Cancel</Text>
+                        </TouchableOpacity>
+                    </Col>
+                    <Col style = {{}} size={70}>
+
+                    </Col>
+
+
+                    <Col style = {{margin:20}} size={15}>
+
+                        <TouchableOpacity onPress={this._onPressButton}>
+                            <Text style={{color:"lightblue" , fontWeight: 'bold'}}>Next</Text>
+                        </TouchableOpacity>
+                          </Col>
+
                 </Row>
-                <Row size={20} style={{backgroundColor: 'green'}}>
-                    <Col style = {{backgroundColor: "red"}}></Col>
-                    <Col style = {{backgroundColor: "black"}}></Col>
-                    <Col></Col>
+                <Row size={55} style={{ borderColor : 'white' , borderWidth: 3 ,backgroundColor: "grey"}}>
+                </Row>
+                <Row size={15} style={{backgroundColor: 'green'}}>
+                    <Col style = {{backgroundColor: "grey" , borderColor : 'white' , borderWidth: 3 , paddingBottom:30}}></Col>
+                    <Col style = {{backgroundColor: "grey" , borderColor : 'white' , borderWidth: 3 , paddingBottom:30}}></Col>
+                    <Col  style = {{backgroundColor: "grey" , borderColor : 'white' , borderWidth: 3 , paddingBottom:30}}></Col>
+                    <Col  style = {{backgroundColor: "grey" ,  borderColor : 'white' , borderWidth: 3 , paddingBottom:30}}></Col>
                 </Row>
 
-                <Row size={20} style={{backgroundColor: 'red'}}>
-                    <Col style = {{backgroundColor: "black"}}></Col>
-                    <Col style = {{backgroundColor: "red"}}></Col>
-                    <Col style = {{backgroundColor: "black"}}></Col>
+                <Row size={15} style={{backgroundColor: 'red'}}>
+                    <Col style = {{backgroundColor: "grey" , borderColor : 'white' , borderWidth: 3 , paddingBottom:30}}></Col>
+                    <Col style = {{backgroundColor: "grey" , borderColor : 'white' , borderWidth: 3 , paddingBottom:30}}></Col>
+                    <Col  style = {{backgroundColor: "grey" , borderColor : 'white' , borderWidth: 3 , paddingBottom:30}}></Col>
+                    <Col  style = {{backgroundColor: "grey" ,  borderColor : 'white' , borderWidth: 3 , paddingBottom:30}}></Col>
 
+                </Row>
+
+                <Row size={10} style={{backgroundColor: 'white'}}>
+                    <Col style = {{margin:20}} size={20} >
+                        <TouchableOpacity onPress={this._onPressButton}>
+                            <Text style={{color:"black" , fontWeight: 'bold'}}>Library</Text>
+                        </TouchableOpacity>
+                    </Col>
+                    <Col style = {{}} size={60}>
+
+                    </Col>
+
+
+                    <Col style = {{margin:20}} size={20}>
+
+                        <TouchableOpacity onPress={this._onPressButton}>
+                            <Text style={{color:"lightblue" , fontWeight: 'bold'}}>Photo</Text>
+                        </TouchableOpacity>
+                    </Col>
                 </Row>
             </Grid>
 
